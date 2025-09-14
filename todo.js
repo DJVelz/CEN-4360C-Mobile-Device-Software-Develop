@@ -13,6 +13,14 @@ function addItem(item) {
         return true;
     }
 }
+
+// Display the full list
+function displayList() {
+    console.log("\nYour ToDo List is:");
+    for (let i=0; i < todoList.length; i++) {
+        console.log((i+1) + ". " + todoList[i]);
+    }
+}
 while (todoList.length < maxItems) {
     let item = prompt("Enter a ToDo item: ");
 
