@@ -3,6 +3,13 @@ const prompt = require("prompt-sync")();
 let todoList = [];
 let maxItems = 10;
 
+// Add items to the list
+function addItem(item) {
+    if (todoList.includes(item)) {
+        console.log("That item is already in the list. Please enter something else.")
+        return false;
+    }
+}
 while (todoList.length < maxItems) {
     let item = prompt("Enter a ToDo item: ");
 
