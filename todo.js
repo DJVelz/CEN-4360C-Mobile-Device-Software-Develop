@@ -8,6 +8,9 @@ function addItem(item) {
     if (todoList.includes(item)) {
         console.log("That item is already in the list. Please enter something else.")
         return false;
+    } else {
+        todoList.push(item);
+        return true;
     }
 }
 while (todoList.length < maxItems) {
