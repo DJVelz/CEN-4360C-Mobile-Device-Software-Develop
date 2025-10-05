@@ -3,7 +3,7 @@ import { useRef } from 'react';
 
 function App() {
 
-  const submit = (e) => {
+  const submit = e => {
     e.preventDefault
   };
 
