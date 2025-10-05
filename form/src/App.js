@@ -1,9 +1,10 @@
 import './App.css';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
+import { useState } from 'react';
 
 function App() {
-  const txtTitle = useRef();
-  const hexColor = useRef();
+  const [title, setTitle] = useState("");
+  const [color, setColor] = useState("#0000");
 
   const submit = e => {
     e.preventDefault();
