@@ -1,11 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import { useRef } from 'react';
 
 function App() {
+
+  const submit = (e) => {
+    e.preventDefault
+  };
+
   return (
-    <div className="App">
-      <h1>Hello from React!</h1>
-    </div>
+    <form onSubmit={submit}>
+      <input type='text' placeholder='color title...'/>
+      <input type='color'/>
+      <button>ADD</button>
+    </form>>
   );
 }
 
