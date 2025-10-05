@@ -12,7 +12,7 @@ function App() {
       <input type='text' placeholder='color title...'/>
       <input type='color'/>
       <button>ADD</button>
-    </form>>
+    </form>
   );
 }
 
