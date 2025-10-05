@@ -13,8 +13,21 @@ function App() {
 
   return (
     <form onSubmit={submit}>
-      <input  type='text' placeholder='color title...'/>
-      <input  type='color'/>
+      <input 
+        value={title}
+        onChange={(event) =>
+          setTitle(event.target.value)
+        }
+        type='text' 
+        placeholder='color title...'
+      />
+      <input  
+        value={color}
+        onChange={(event) =>
+          setColor(event.target.value)
+        }
+        type='color'
+      />
       <button>ADD</button>
     </form>
   );
