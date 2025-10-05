@@ -8,18 +8,13 @@ function App() {
 
   const submit = e => {
     e.preventDefault();
-    const title = txtTitle.current.value;
-    const color = hexColor.current.value;
     alert(`${title}, ${color}`)
-    /* Resets values */
-    txtTitle.current.value = "";
-    hexColor.current.value = "";
   };
 
   return (
     <form onSubmit={submit}>
-      <input ref={txtTitle} type='text' placeholder='color title...'/>
-      <input ref={hexColor} type='color'/>
+      <input  type='text' placeholder='color title...'/>
+      <input  type='color'/>
       <button>ADD</button>
     </form>
   );
