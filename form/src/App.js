@@ -1,5 +1,4 @@
 import './App.css';
-import { useRef, useState } from 'react';
 import { useState } from 'react';
 
 function App() {
@@ -9,6 +8,8 @@ function App() {
   const submit = e => {
     e.preventDefault();
     alert(`${title}, ${color}`)
+    setTitle("");
+    setColor("#000");
   };
 
   return (
